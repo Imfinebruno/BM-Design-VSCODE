@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header-bg">
+    <div class="header">
+      <div class="header-logo">
+          <img src="icons/LOGO BRANCO.png" alt="logo">
+      </div>
+
+      <nav class="menu-bar" id="menu-bar">
+          <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+
+          <div>
+              <ul class="nav" id="nav">
+                <li class="lista"> <a href=""> Sobre nós </a></li>
+                <li> <a href=""> Criação de sites </a></li>
+                <li> <a href=""> Criação de lojas </a></li>
+                <li> <a href=""> Gestão de redes sociais </a></li>
+                <li> <a href=""> Portfólio </a></li>
+                <li> <a href=""> Contato </a></li>
+              </ul>
+              <div class="menu-bg" id="menu-bg"></div>
+          </div>
+      </nav>
+    </div>
+  
+    <div class="header-headline">
+      <h1>Você no Digital</h1>
+      <h2>Eleve sua empresa!</h2>
+      <p>Soluções em sites, gestão de redes sociais e marketing digital</p>
+      <a href="#topo-inicio" transition="0.6s ease">Saiba mais</a>
+    </div>
+  </header>
+
+
+  <section class="topo-inicio" id="topo-inicio">
+    <div class="secao-icone">
+      <img src="imgs/RAPAZ 1.png" alt="rapaz1">
+    </div>
+    <div class="secao-texto">
+      <p>Tenha sua marca no digital</p>
+      <h1>Conquiste grandes coisas!</h2>
+      <p>Amplie os negócios da sua marca ou empresa no ambiente digital e conquiste mais clientes!</p>
+    </div>
+  </section>
+
+  <div class="oque-fazemos-bg">
+    <section class="oque-fazemos">
+      
+      <div class="secao1-titulo">
+        <h1>O que fazemos?</h1>
+      </div>
+
+      <div class="lista-trabalhos"> 
+        <div class="lista-icons">
+          <img src="icons/www 1.png">
+          <img src="icons/bolsa-de-compras 1.png">
+          <img src="icons/marketing-social 1.png">
+        </div>
+        <dl>
+          <dt>Criação de site</dt>
+          <dd>Criamos o site para você ou sua empresa para alcançarem mais pessoas!</dd>
+          <dt>Criação de loja virtual</dt>
+          <dd>Tenha sua própria loja e conquiste seus clientes vendendo seus produtos</dd>
+          <dt>Gestão de redes sociais</dt>
+          <dd>Posicione seu negócio nas redes sociais com artes e uma gestão de qualidade</dd>
+        </dl>
+      </div>
+    </section>
+  </div>
+
+  <section class="quem-somos-container">
+    <h1>Quem somos nós (eu)</h1>
+    <div class="quem-somos">
+      <div class="quem-somos-descricao">
+        <h2>Bruno Menezes CEO/Designer</h2>
+        <p>Meu nome é Bruno tenho 21 anos e sou formado em Produção Fonográfica, além disso sou Designer focado em marketing
+          digital, com experiências em UI/UX Design e programação Front-End!</p>
+      </div>
+      <div class="foto-bruno">
+        <img src="imgs/eu.png" alt="">
+      </div>
+    </div>
+    <hr class="linha" size="5px" width="70%">
+  </section>
+
+  <section class="portfolio-container">
+    <div class="porfolio-titulo">
+      <h1>Alguns trabalhos realizados</h1>
+      <p>portfólio</p>
+    </div>
+    
+    <div class="navigation">
+      <label class="bar1" for="slide1">Sites</label>
+      <label class="bar2" for="slide2">Artes</label>
+    </div>
+  
+    <div class="content">
+      <div class="slides">
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+  
+        <div class="slide s1" >
+          <img src="imgs/notebooks.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="imgs/artes.png" alt="">
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="botao-contato">
+      <a href="contato.html">Contato</a>
+    </div>
+
+  </section>
+
+  <footer class="footer-container">
+    <div class="footer">
+      <div class= "footer-logo">
+        <img src="icons/LOGO BRANCO.png" alt="">
+      </div>
+      <div class="contatos">
+        <div class="footer-contato">
+          <h1>Entre em contato</h1>
+          <dl>
+            <dt>WhatsApp:</dt>
+            <dd class="whatsapp"> <img src="icons/whatsapp (1).png" alt=""><a href="">(51) 98528-4506 </a></dd>
+          </dl>
+          <dl>
+            <dt>E-mail:</dt>
+            <dd>brunomenezesdesign@gmail.com</dd>
+          </dl>
+        </div>
+        <div class="footer-servicos">
+          <h1>Nossos serviços</h1>
+          <ul>
+            <li><a href="">Criação de site</a></li>
+            <li><a href="">Criação de loja virtual</a></li>
+            <li><a href="">Gestão de redes sociais</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
