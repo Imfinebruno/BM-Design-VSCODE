@@ -26,17 +26,23 @@ ul {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
-.header-logo{
+.header-logo {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.logo{
   max-width: 200px;
-  margin: 50px 50px;
+  padding: 50px 50px;
+  /* margin: 50px 50px; */
 }
 
-.menu-bar {
-  max-width: 500px;
-}
 .menu-bar{
   display: flex;
   flex-wrap: wrap;
@@ -71,10 +77,22 @@ ul {
   transform: translateY(5px);
 }
 .nav {
-  transition: 0.5s ease;
-  display: none;
+  visibility: hidden;
+  box-sizing: border-box;
+  opacity: 98%;
+  background-color: #3C3B3B;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  height: 0;
+  z-index: 1000;
+  overflow-y: hidden;
+  transition: 0.2s ease;
 }
 
+.menu-bar {
+  position: fixed;
+}
 .menu-bar ul li a {
   color: white;
   font-size: 1.5em;
@@ -86,12 +104,12 @@ ul {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.menu-bar a:hover {
+/* .menu-bar a:hover {
   color: #C5C5C5;
-}
+} */
 
 .change .bar {
-  background-color: #3C3B3B;
+  background-color: #fff;
 }
 
 .change #bar1{
@@ -103,15 +121,11 @@ ul {
 .change #bar2{
 	opacity: 0;
 }
+
 .change {
-  display: block;
+  height: 330px;
+  visibility: visible;
 }
-
-
-
-/*TENTANDO FAZER O MENU HAMBURGUER*/
-
-
 
 .header-headline {
   max-width: 1360px;
@@ -160,7 +174,6 @@ ul {
 
 .topo-inicio {
   max-width: 1360px;
-  /* height: 700px; */
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -211,7 +224,7 @@ ul {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   flex-direction: column;
 }
@@ -556,3 +569,270 @@ input {
   color: #C5C5C5;
 }
 
+@media (max-width: 700px) {
+  .header-bg {
+    width: 100vw;
+    height: 700px;
+  }
+  .header {
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header-logo {
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .logo{
+    max-width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .header-headline {
+    margin: 0 auto;
+  }
+
+  .header-headline h1{
+    font-size: 1.5em;
+  }
+  .header-headline h2{
+    font-size: 3em;
+  }
+  .header-headline p{
+    font-size: 15px;
+  }
+
+  .menu-bar {
+    position: fixed;
+    align-items: flex-start;
+    margin-top: 15px;
+    width: 100vw;
+    z-index: 1000;
+  }
+
+  .bar {
+    height: 7px;
+    width: 50px;
+  }
+  .change .bar {
+    height: 5px;
+  }
+  .menu-bar ul li a {
+    text-align: start;
+    padding: 15px;
+  }
+  .nav {
+    transition: 0.3s ease;
+    box-sizing: border-box;
+    opacity: 98%;
+    background-color: #3C3B3B;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .change {
+    height: 100vh;
+    visibility: visible;
+  }
+
+  .topo-inicio {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .secao-icone img {
+    max-width: 320px;
+    margin-bottom: 20px;
+  }
+  
+  .secao-texto :nth-child(1){
+    font-family: montserrat, arial, sans-serif;
+    color: #0070A1;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .secao-texto :nth-child(3){
+    max-width: 700px;
+    font-family: montserrat, arial, sans-serif;
+    color: #3C3B3B;
+    text-transform: uppercase;
+    font-weight:500;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .secao-texto h1{
+    font-family: montserrat, arial, sans-serif;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px;
+  }
+  .oque-fazemos-bg{
+    max-width: 100%;
+    height: 900px;
+    background-color: #0070A1;
+  }
+  .oque-fazemos h1 {
+    font-size: 1.5em;
+    text-align: center; 
+  }
+  .oque-fazemos img {
+    width: 100px;
+  }
+  .lista-icons {
+    display: none;
+  }
+
+  .lista-trabalhos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .lista-trabalhos dl {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .lista-trabalhos dt {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 300px;
+  }
+  .quem-somos-container {
+    max-width: 1360px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  .quem-somos {
+    /* max-width:700px; */
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .quem-somos-container h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .quem-somos h2 {
+    font-family: montserrat, arial, sans-serif;
+    color: black;
+    text-transform: uppercase;
+    font-weight:bolder;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    max-width: 300px;
+  }
+  
+  .quem-somos p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    max-width: 300px;
+  }
+  
+  .foto-bruno {
+    max-width: 200px;
+  }
+  .portfolio-container {
+    max-width: 1360px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  .portfolio-container h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .portfolio-container p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .navigation {
+    max-width: 0px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .bar1 {
+    font-size: 2em;
+    padding: 5px 30px;
+  }  
+  .bar2 {
+    font-size: 2em;
+    padding: 5px 30px;
+  }
+  .content{
+    height: 500px;
+    width: 700px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .slides {
+    display: flex;
+    width: 200%;
+    height: 100%;
+  }
+  
+  .slide {
+    width: 50%;
+    transition: 0.6s ease;
+  }
+  .slide img {
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .footer {
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 20px;
+  }
+  .footer-contato {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .footer-logo img {
+    width: 300px;
+  }
+  .footer-contato h1 {
+    margin-top: 20px;
+    font-size:2em;
+    margin-bottom: 10px;
+  }
+  
+  .footer-contato dl dt {
+    font-size: 20px;
+    margin: 20px 20px 20px 0px;
+  }
+  .footer-contato dd {
+    font-size: 20px;
+    margin: 10px 10px 10px 0px;
+  }
+}
