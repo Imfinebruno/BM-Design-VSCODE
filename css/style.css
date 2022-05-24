@@ -67,9 +67,7 @@ ul {
   border-radius: 5px;
   transition: 0.3s ease;
 }
-.bar:hover {
-  background-color:#C5C5C5;
-}
+
 #bar1 {
   transform: translateY(-5px);
 }
@@ -89,7 +87,9 @@ ul {
   overflow-y: hidden;
   transition: 0.2s ease;
 }
-
+.nav a:hover {
+  color: #818181;
+}
 .menu-bar {
   position: fixed;
 }
@@ -104,9 +104,6 @@ ul {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-/* .menu-bar a:hover {
-  color: #C5C5C5;
-} */
 
 .change .bar {
   background-color: #fff;
@@ -224,7 +221,6 @@ ul {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   align-items: center;
   flex-direction: column;
 }
@@ -236,7 +232,8 @@ ul {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  margin: 50px;
+  margin-bottom: 50px;
+  padding-top: 20px;
 }
 
 .lista-trabalhos {
@@ -541,9 +538,6 @@ input {
 }
 
 .footer-servicos {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   margin-left: 100px;
 }
 .footer-servicos h1 {
@@ -579,6 +573,7 @@ input {
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
+    overflow: hidden;
   }
   .header-logo {
     box-sizing: border-box;
@@ -607,7 +602,7 @@ input {
     position: fixed;
     align-items: flex-start;
     margin-top: 15px;
-    width: 100vw;
+    /* width: 100vw; */
     z-index: 1000;
   }
 
@@ -719,7 +714,6 @@ input {
   }
   
   .quem-somos {
-    /* max-width:700px; */
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
@@ -752,7 +746,6 @@ input {
     max-width: 200px;
   }
   .portfolio-container {
-    max-width: 1360px;
     margin: 0 auto;
     margin-top: 50px;
   }
@@ -783,7 +776,7 @@ input {
   }
   .content{
     height: 500px;
-    width: 700px;
+    width: 100vw;
     overflow: hidden;
     margin: 0 auto;
   }
@@ -804,29 +797,17 @@ input {
     display: none;
   }
   .footer {
-    max-width: 700px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content:flex-start;
-    align-items: center;
-    padding: 20px;
-  }
-  .footer-contato {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    padding: 10px;
   }
   
   .footer-logo img {
-    width: 300px;
+    width: 100px;
   }
   .footer-contato h1 {
     margin-top: 20px;
     font-size:2em;
     margin-bottom: 10px;
   }
-  
   .footer-contato dl dt {
     font-size: 20px;
     margin: 20px 20px 20px 0px;
@@ -834,5 +815,15 @@ input {
   .footer-contato dd {
     font-size: 20px;
     margin: 10px 10px 10px 0px;
+  }
+
+  .footer-servicos {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .contatos {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: column;
   }
 }
